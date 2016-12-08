@@ -1,0 +1,15 @@
+// modules/Repo.js
+import React from 'react'
+
+export default React.createClass({
+
+  render() {
+    console.log(this.props.params);
+    return (
+      <div>
+        <p>Are you working</p>
+        <h2>{this.props.params.repoName}</h2>
+      </div>
+    )
+  }
+})
